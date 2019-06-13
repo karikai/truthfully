@@ -1,0 +1,22 @@
+#sign-up-box {
+    background: white;
+    border: grey solid 1px;
+    width: 30%;
+    margin: 10% auto;
+    padding: 2.5%;
+}
+
+#sign-up-box > input{
+    width: 100%;
+    padding: 1.5%;
+}
+
+button {
+    margin: 4.5% auto;
+    width: 30%;
+    padding: 2%;
+}
+
+h2 {
+    text-align: center;
+}

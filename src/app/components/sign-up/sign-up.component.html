@@ -1,0 +1,11 @@
+<div id="sign-up-box">
+  <h2><strong>Sign Up</strong></h2>
+  <p>Email</p>
+  <input [(ngModel)]="user.email" type="email">
+  <p>Username</p>
+  <input [(ngModel)]="user.username" type="text">
+  <p>Password</p>
+  <input [(ngModel)]="password" type="password">
+
+  <button (click)="createUser()">Sign Up</button>
+</div>

@@ -1,0 +1,29 @@
+<div *ngIf="loaded && !loggedInUser">
+  <div id="top-row">
+    <p>{{ user.username }}</p>
+  </div>
+
+  <textarea id="ask" placeholder="Ask a question, Press enter to submit..."
+  [(ngModel)]="question" (keyup.enter)="askQuestion()"></textarea>
+
+  <div *ngFor="let item of questionArray" class="questions">
+    <p>{{ item.question }}</p>
+    <p>{{ item.response }}</p>
+  </div>
+</div>
+
+<div *ngIf="loaded && loggedInUser">
+    <div id="top-row">
+      <p>{{ user.username }}</p>
+    </div>
+  
+    <textarea id="ask" placeholder="Ask a question, Press enter to submit..."
+    [(ngModel)]="question" (keyup.enter)="askQuestion()"></textarea>
+  
+    <div *ngFor="let item of questionArray" class="questions">
+      <p>{{ item.question }}</p>
+      <p>{{ item.response }}</p>
+      <button (click)="respond(true, item.qid)">True</button>
+      <button (click)="respond(false, item.qid)">False</button>
+    </div>
+</div>

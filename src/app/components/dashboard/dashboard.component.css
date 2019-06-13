@@ -1,0 +1,39 @@
+#positioning-div {
+    width: 100%;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+#positioning-div > div {
+    width: 20%;
+}
+
+#positioning-div > div > h2 {
+    text-align: center;
+}
+
+#positioning-div > div > p {
+    text-align: center;
+}
+
+#positioning-div > div > img {
+    width: 100%;
+}
+
+button {
+    background: black;
+    border: 1px grey solid;
+    border-radius: 20px;
+    width: 15%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1% 1.5%;
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    font: 800;
+}

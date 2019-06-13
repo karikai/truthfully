@@ -1,0 +1,28 @@
+#search-results {
+    background: white;
+    border: 1px grey solid;
+    width: 80%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.user-list {
+    border: grey solid 1px;
+    padding: 1.5%;
+    cursor: pointer;
+}
+
+.user-list > * {
+    display: inline;
+}
+
+.user-list > img {
+    border-radius: 110px;
+    width: 5%;
+    vertical-align: middle;
+}
+
+.user-list > p {
+    vertical-align: middle;
+}

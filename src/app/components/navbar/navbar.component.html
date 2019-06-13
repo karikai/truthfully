@@ -1,0 +1,7 @@
+<nav class="navigation-bar">
+    <img class="logo">
+    <a href="">Home</a>
+    <a href="sign-in">Sign In</a>
+    <a (click)="signOut()">Sign Out</a>
+    <input [(ngModel)]="keyword" (keydown.enter)="search()" placeholder="Search for Users" type="text">
+</nav>
